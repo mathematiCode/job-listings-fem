@@ -1,15 +1,18 @@
-import "./App.css";
-import JobListing from "./JobListing";
+import "./card.css";
+import JobListing from "./components/JobListing";
+import data from "../data.json";
+
+// let jobData = JSON.parse(data);
+let jobData = data;
 
 function App() {
-  const job = {
-    languages: ["English", "Spanish"],
-  };
   return (
-    <>
-      <h1>Good Evening</h1>
-      <JobListing job={job} />
-    </>
+    <div className="app" key="all-jobs">
+      <h1>Available Jobs</h1>
+      {jobData.map((job) => (
+        <JobListing key={job.id} job={job} />
+      ))}
+    </div>
   );
 }
 
