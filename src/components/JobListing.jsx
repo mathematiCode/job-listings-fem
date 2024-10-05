@@ -3,20 +3,18 @@ import "../card.css";
 import JobLanguages from "./JobLanguages";
 import MainInfo from "./MainInfo";
 
-function hi() {
-  console.log("hi");
-}
 // eslint-disable-next-line react/prop-types
 function JobListing({ job }) {
-  console.log("job in JobListing is", job);
-  hi();
   // eslint-disable-next-line react/prop-types
+  let companyWithDashes = job.company.replace(/ /g, "-");
+  companyWithDashes = companyWithDashes.replace(".", "");
   return (
     <div className="job-container" key={job.id}>
+      <img src={`../images/${companyWithDashes}.svg`} />
       <MainInfo job={job}></MainInfo>
-      <div className="language-container">
+      <ul className="language-container">
         <JobLanguages languages={job.languages}></JobLanguages>
-      </div>
+      </ul>
     </div>
   );
 }
