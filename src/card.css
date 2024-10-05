@@ -97,6 +97,8 @@ h3 {
   img {
     width: 70px;
     transform: translate(0, -45px);
-    filter: drop-shadow(0px 0px 2px white) !important;
+    filter: drop-shadow(0px 0px 3px rgb(160, 200, 250));
+    border: 2px solid rgb(160, 200, 250);
+    border-radius: 50%;
   }
 }
