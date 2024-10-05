@@ -8,7 +8,7 @@ function JobListing({ job }) {
   // eslint-disable-next-line react/prop-types
   return (
     <div className="job-container" key={job.id}>
-      <img src={job.logo} />
+      <img src={job.logo} alt={`${job.company} logo`} />
       <MainInfo job={job}></MainInfo>
       <ul className="language-container">
         <JobLanguages languages={job.languages}></JobLanguages>
