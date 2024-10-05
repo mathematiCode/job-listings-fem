@@ -10,7 +10,7 @@ function JobListing({ job }) {
   companyWithDashes = companyWithDashes.replace(".", "");
   return (
     <div className="job-container" key={job.id}>
-      <img src={`../images/${companyWithDashes}.svg`} />
+      <img src={`../public/images/${companyWithDashes}.svg`} />
       <MainInfo job={job}></MainInfo>
       <ul className="language-container">
         <JobLanguages languages={job.languages}></JobLanguages>
