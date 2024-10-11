@@ -10,9 +10,8 @@ function JobListing({ job }) {
     <div className="job-container" key={job.id}>
       <img src={job.logo} alt={`${job.company} logo`} />
       <MainInfo job={job}></MainInfo>
-      <ul className="language-container">
-        <JobLanguages languages={job.languages}></JobLanguages>
-      </ul>
+
+      <JobLanguages languages={job.languages}></JobLanguages>
     </div>
   );
 }

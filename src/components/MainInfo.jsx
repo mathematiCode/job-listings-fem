@@ -9,7 +9,7 @@ function MainInfo({ job }) {
         {job.new === true && <span className="tag">New!</span>}
         {job.featured === true && <span className="tag">Featured</span>}
       </div>
-      <h3>{job.position}</h3>
+      <h2>{job.position}</h2>
       <div className="bottom-row">
         <p>{job.postedAt}</p>
         <span>·</span>
