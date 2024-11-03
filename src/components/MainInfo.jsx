@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line react/prop-types
 function MainInfo({ job }) {
-  console.log("job is", job);
   return (
     <div className="main-info">
       <div className="top-row">

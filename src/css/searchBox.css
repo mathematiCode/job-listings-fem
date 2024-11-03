@@ -1,0 +1,21 @@
+.current-filters {
+  background-color: white;
+  color: #242424;
+  outline: none;
+  font-size: 1.1rem;
+  border: none;
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  margin-left: 15px;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #808080;
+  margin-right: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import "../card.css";
+import "../css/card.css";
 import JobLanguages from "./JobLanguages";
 import MainInfo from "./MainInfo";
 

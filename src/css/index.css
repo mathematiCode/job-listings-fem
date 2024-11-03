@@ -40,9 +40,19 @@ h1 {
   margin: 2rem;
 }
 
+.search-box {
+  background-color: white;
+  margin: 20px;
+  height: 40px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  align-items: center;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: white;
   }
 }
