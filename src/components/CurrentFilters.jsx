@@ -4,7 +4,14 @@ function CurrentFilters({ filterList }) {
   return (
     <div className="current-filters">
       {filterList.map((filter) => {
-        return <p key={filter}> {filter} </p>;
+        return (
+          <div key={`${filter} container`} className="filter">
+            <p key={filter}> {filter} </p>
+            <button className="remove-filter-button" key={`remove ${filter}`}>
+              X
+            </button>
+          </div>
+        );
       })}
     </div>
   );

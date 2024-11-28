@@ -19,3 +19,25 @@ button {
   font-weight: 600;
   cursor: pointer;
 }
+
+.filter {
+  display: flex;
+  background: rgb(160, 200, 250);
+  justify-content: flex-end;
+  gap: 10px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.filter p {
+  padding-left: 10px;
+}
+
+.remove-filter-button {
+  background-color: rgb(40, 80, 140);
+  width: 30px;
+  color: white;
+  margin-right: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

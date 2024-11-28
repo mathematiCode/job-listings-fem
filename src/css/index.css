@@ -56,3 +56,13 @@ h1 {
     background-color: white;
   }
 }
+
+.no-styles {
+  border: 0px none;
+  background-color: transparent;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+  font-size: inherit;
+  padding: 5px;
+}
