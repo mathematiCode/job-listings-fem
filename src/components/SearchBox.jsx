@@ -9,7 +9,7 @@ function SearchBox() {
   return (
     <div className="search-box">
       <CurrentFilters filterList={filterList}></CurrentFilters>
-      <button> Clear</button>
+      <button onClick={() => setFilterList([])}> Clear</button>
     </div>
   );
 }
