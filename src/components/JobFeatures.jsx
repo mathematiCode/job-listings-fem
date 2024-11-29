@@ -5,7 +5,7 @@ import { removeItemFromList } from "../utilities";
 
 function JobFeatures({ features }) {
   return (
-    <ul className="language-container">
+    <ul className="feature-container">
       {features.map((feature, index) => (
         <ListItem key={index} feature={feature} />
       ))}
@@ -49,7 +49,7 @@ function ListItem({ feature }) {
   return (
     <li
       key={Math.random()}
-      className="language"
+      className="feature"
       data-hovered={hovered}
       data-selected={selected}
       onMouseEnter={handleMouseEnter}

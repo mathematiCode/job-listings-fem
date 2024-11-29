@@ -6,15 +6,17 @@ import { FilterListContext } from "../context/FilterListProvider";
 
 function FilterContainer() {
   const { filterList, setFilterList } = useContext(FilterListContext);
-  return (
-    <div className="search-box">
-      <CurrentFilters filterList={filterList}></CurrentFilters>
-      <button className="clear-button" onClick={() => setFilterList([])}>
-        {" "}
-        Clear
-      </button>
-    </div>
-  );
+  if (filterList.length > 0) {
+    return (
+      <div className="filter-container">
+        <CurrentFilters filterList={filterList}></CurrentFilters>
+        <button className="clear-button" onClick={() => setFilterList([])}>
+          {" "}
+          Clear
+        </button>
+      </div>
+    );
+  } else return;
 }
 
 export default FilterContainer;
