@@ -2,6 +2,7 @@
   color: #242424;
   outline: none;
   font-size: 1.1rem;
+  font-weight: 600;
   border: none;
   width: 80%;
   display: flex;
@@ -40,6 +41,7 @@ button {
   margin-right: 0px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  padding-top: 3px;
 }
 
 .clear-button {

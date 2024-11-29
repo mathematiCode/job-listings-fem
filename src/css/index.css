@@ -65,3 +65,7 @@ h1 {
   font-size: inherit;
   padding: 5px;
 }
+
+.selected-job-container {
+  width: 350px;
+}

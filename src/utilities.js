@@ -22,7 +22,6 @@ export function filterJobs(filterList) {
       });
     });
   }
-  console.log("new list is", newJobList);
 
   return newJobList;
 }

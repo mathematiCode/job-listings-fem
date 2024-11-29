@@ -4,7 +4,7 @@
 }
 
 .job-container {
-  /* background-color: rgba(0, 32, 98, 0.258); */
+  background-color: inherit;
   border-radius: 10px;
   border: 2px solid rgb(160, 200, 250);
   margin: 20px;
@@ -55,8 +55,13 @@ h2 {
   cursor: pointer;
 }
 
+h2:hover {
+  color: rgb(160, 200, 250);
+}
+
 .feature-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: end;
   align-items: center;
   gap: 15px;

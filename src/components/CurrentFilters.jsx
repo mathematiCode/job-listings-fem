@@ -2,6 +2,7 @@
 import { FilterListContext } from "../context/FilterListProvider";
 import { useContext } from "react";
 import { removeItemFromList } from "../utilities";
+import { X } from "lucide-react";
 
 function CurrentFilters() {
   const { filterList, setFilterList } = useContext(FilterListContext);
@@ -22,7 +23,7 @@ function CurrentFilters() {
               key={`remove ${filter}`}
               onClick={() => removeFilter(filter)}
             >
-              X
+              <X />
             </button>
           </div>
         );
