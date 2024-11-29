@@ -1,24 +1,22 @@
 import "./css/index.css";
-import JobListing from "./components/JobListing";
+import JobListingsContainer from "./components/JobListingsContainer.jsx";
 import SearchBox from "./components/SearchBox";
-import data from "../data.json";
 import FilterListProvider from "./context/FilterListProvider.jsx";
+import CurrentJobsProvider from "./context/CurrentJobsProvider.jsx";
 
 // let jobData = JSON.parse(data);
-let jobData = data;
+// let jobData = data;
 
 function App() {
-  // const [filterList, setFilterList] = React.useState([]);
-  console.log("hi");
   return (
     <FilterListProvider>
-      <div className="app" key="all-jobs">
-        <h1>Available Jobs</h1>
-        <SearchBox></SearchBox>
-        {jobData.map((job) => (
-          <JobListing key={job.id} job={job} />
-        ))}
-      </div>
+      <CurrentJobsProvider>
+        <div className="app" key="all-jobs">
+          <h1>Available Jobs</h1>
+          <SearchBox></SearchBox>
+          <JobListingsContainer></JobListingsContainer>
+        </div>
+      </CurrentJobsProvider>
     </FilterListProvider>
   );
 }

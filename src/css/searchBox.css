@@ -1,5 +1,4 @@
 .current-filters {
-  background-color: white;
   color: #242424;
   outline: none;
   font-size: 1.1rem;
@@ -31,13 +30,19 @@ button {
 
 .filter p {
   padding-left: 10px;
+  align-self: center;
 }
 
 .remove-filter-button {
-  background-color: rgb(40, 80, 140);
+  background-color: rgb(60, 100, 160);
   width: 30px;
   color: white;
   margin-right: 0px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.clear-button {
+  font-size: 1.1rem;
+  color: white;
 }

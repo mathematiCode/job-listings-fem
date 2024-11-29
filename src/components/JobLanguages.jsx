@@ -2,6 +2,7 @@
 import { useState, useContext, useEffect } from "react";
 import { FilterListContext } from "../context/FilterListProvider";
 import { removeItemFromList } from "../utilities";
+import { filterJobs } from "../utilities";
 
 function JobLanguages({ languages }) {
   return (
