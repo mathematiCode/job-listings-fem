@@ -1,6 +1,13 @@
 /* eslint-disable react/prop-types */
-// eslint-disable-next-line react/prop-types
+
+import { CurrentJobSelecedContext } from "../context/CurrentJobSelectedProvider";
+import { useContext } from "react";
 function MainInfo({ job }) {
+  const { setCurrentJobSelected } = useContext(CurrentJobSelecedContext);
+  function handleJobSelection() {
+    setCurrentJobSelected(job);
+  }
+
   return (
     <div className="main-info">
       <div className="top-row">
@@ -8,7 +15,7 @@ function MainInfo({ job }) {
         {job.new === true && <span className="tag">New!</span>}
         {job.featured === true && <span className="tag">Featured</span>}
       </div>
-      <h2>{job.position}</h2>
+      <h2 onClick={handleJobSelection}>{job.position}</h2>
       <div className="bottom-row">
         <p>{job.postedAt}</p>
         <span>·</span>

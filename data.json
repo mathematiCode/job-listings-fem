@@ -12,7 +12,8 @@
     "contract": "Full Time",
     "location": "USA Only",
     "languages": ["HTML", "CSS", "JavaScript"],
-    "tools": []
+    "tools": [],
+    "description": "This job, let me tell you, is absolutely tremendous. Senior Frontend Developer. It’s senior, so it’s very big league—only the best, the smartest people can do this job. You’ll be using HTML, CSS, JavaScript—some of the most incredible tools ever created, and you’ll be making websites, websites so stunning and powerful people will say, 'Wow, this is the best website I’ve ever seen!' Only in the USA because we’re keeping it American. Truly an incredible opportunity!"
   },
   {
     "id": 2,
@@ -27,7 +28,8 @@
     "contract": "Part Time",
     "location": "Remote",
     "languages": ["Python"],
-    "tools": ["React"]
+    "tools": ["React"],
+    "description": "Fullstack Developer, and let me just say, this is a job like no other. You’ll be doing fullstack, which is, honestly, one of the most complex and important things in tech today. They’re using Python, a very classy, very respected language. React, too—it’s got the best reputation, everyone loves it. And here’s the best part: it’s remote. You can do it from anywhere, maybe even from a beautiful hotel. It’s part-time, but believe me, the results will be full-time amazing. Incredible job!"
   },
   {
     "id": 3,
@@ -42,7 +44,8 @@
     "contract": "Part Time",
     "location": "USA Only",
     "languages": ["JavaScript"],
-    "tools": ["React", "Sass"]
+    "tools": ["React", "Sass"],
+    "description": "Junior Frontend Developer—wow, what a job! You’re starting at the ground floor, but what a foundation you’re building. You’re using JavaScript, which, as everyone knows, is a tremendous language, very flexible, very smart. React and Sass? Let me tell you, these are tools of champions, tools of winners. It’s part-time, but it’s going to feel like you’re part of something much bigger, something huge. USA only—so patriotic, so American. Believe me, you don’t want to miss this one!"
   },
   {
     "id": 4,
@@ -57,7 +60,8 @@
     "contract": "Contract",
     "location": "USA Only",
     "languages": ["CSS", "JavaScript"],
-    "tools": []
+    "tools": [],
+    "description": "This one, is a real beauty. Junior Frontend Developer, and it’s contract work, so you’re practically your own boss. You’ll use CSS, which I hear is very stylish, very elegant, and JavaScript, which everyone agrees is one of the most tremendous languages in the world. It’s in the USA, the best country on Earth, and you’re going to be making things look so good, so sharp, people will be amazed. It’s a fantastic opportunity, a real winner!"
   },
   {
     "id": 5,
@@ -72,7 +76,8 @@
     "contract": "Full Time",
     "location": "Worldwide",
     "languages": ["JavaScript", "Ruby"],
-    "tools": ["Sass"]
+    "tools": ["Sass"],
+    "description": "Software Engineer at Loop Studios—let me tell you, this is a big one. Fullstack work, and it’s going to be incredible. You’re working with JavaScript and Ruby, two languages that are, quite frankly, the best. Very powerful, very respected. Sass is also in there, and it’s just fantastic, really elevates everything. Full-time, worldwide—you could be anywhere, and you’re still making a huge impact. This job is a global powerhouse, and only the best can handle it. Truly a tremendous role!"
   },
   {
     "id": 6,
@@ -87,7 +92,8 @@
     "contract": "Full Time",
     "location": "UK Only",
     "languages": ["Ruby"],
-    "tools": ["RoR"]
+    "tools": ["RoR"],
+    "description": "Junior Backend Developer—this is a very, very important job. You’ll be working in the UK, a great place, very classy, lots of history. You’re using Ruby and Rails—two things that, honestly, everyone says are top-notch. Backend is where all the magic happens. Full-time, full responsibility, and full of opportunities to be a winner. You’re going to make backend great again!"
   },
   {
     "id": 7,
@@ -102,7 +108,8 @@
     "contract": "Full Time",
     "location": "Worldwide",
     "languages": ["HTML", "JavaScript"],
-    "tools": ["Sass"]
+    "tools": ["Sass"],
+    "description": "Junior Developer at Shortly. It’s a simple title but a massive opportunity. You’re working with HTML, the backbone of the internet, and JavaScript, the king of programming languages. Sass is in the mix, too—makes everything so polished, so professional. Full-time and worldwide, so you’ll be connecting with people all over the globe. Believe me, you’ll feel like you’re ruling the tech world. A sensational job!"
   },
   {
     "id": 8,
@@ -117,7 +124,8 @@
     "contract": "Full Time",
     "location": "USA Only",
     "languages": ["JavaScript"],
-    "tools": ["Vue", "Sass"]
+    "tools": ["Vue", "Sass"],
+    "description": "Junior Frontend Developer at Insure. What a name, what a company. You’re working with JavaScript, Vue, and Sass—tools that are, quite frankly, the best in the business. Full-time and USA only, because we’re keeping the talent right here in America. You’ll be building things so solid, so secure, people will say, 'This is the gold standard.' It’s a truly remarkable role!"
   },
   {
     "id": 9,
@@ -132,7 +140,8 @@
     "contract": "Full Time",
     "location": "Worldwide",
     "languages": ["JavaScript", "Python"],
-    "tools": ["Django"]
+    "tools": ["Django"],
+    "description": "Full Stack Engineer at Eyecam Co.—what a title, what a job. Fullstack is huge, it’s where the action is. JavaScript and Python? Two of the most powerful languages, everyone agrees. And Django, it’s a real game-changer, believe me. Full-time and worldwide, so you’re going to be making waves on a global scale. This job is big, bold, and absolutely fantastic. Don’t miss it!"
   },
   {
     "id": 10,
@@ -147,6 +156,7 @@
     "contract": "Part Time",
     "location": "Worldwide",
     "languages": ["JavaScript"],
-    "tools": ["React", "Sass"]
+    "tools": ["React", "Sass"],
+    "description": "Front-end Dev at The Air Filter Company—very clean, very refreshing, just like their products. You’re working with JavaScript, React, and Sass, three tools that are, let’s be honest, top-tier. Part-time but worldwide, so you’ll feel like a global superstar. It’s a job that’s going to filter out all the nonsense and leave you with pure success. Truly an extraordinary opportunity!"
   }
 ]

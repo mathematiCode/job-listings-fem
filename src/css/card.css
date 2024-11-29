@@ -3,17 +3,6 @@
   margin: 0px;
 }
 
-.job-container {
-  background-color: inherit;
-  border-radius: 10px;
-  border: 2px solid rgb(160, 200, 250);
-  margin: 20px;
-  padding: 1rem;
-  box-shadow: 0px 0px 50px 5px hsla(213, 86%, 89%, 0.1);
-  display: grid;
-  grid-template-columns: 100px 1fr 1fr;
-}
-
 .main-info {
   grid-column: 2/3;
   text-align: left;
