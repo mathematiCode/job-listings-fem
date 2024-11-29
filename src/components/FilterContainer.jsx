@@ -1,4 +1,5 @@
 import "../css/FilterContainer.css";
+import { motion } from "motion/react";
 import CurrentFilters from "./CurrentFilters";
 import { useContext } from "react";
 import { FilterListContext } from "../context/FilterListProvider";
@@ -8,13 +9,13 @@ function FilterContainer() {
   const { filterList, setFilterList } = useContext(FilterListContext);
   if (filterList.length > 0) {
     return (
-      <div className="filter-container">
+      <motion.div layout={true} className="filter-container">
         <CurrentFilters filterList={filterList}></CurrentFilters>
         <button className="clear-button" onClick={() => setFilterList([])}>
           {" "}
           Clear
         </button>
-      </div>
+      </motion.div>
     );
   } else return;
 }

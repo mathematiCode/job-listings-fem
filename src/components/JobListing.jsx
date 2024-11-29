@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import "../css/card.css";
+import { motion } from "motion/react";
 import JobFeatures from "./JobFeatures";
 import MainInfo from "./MainInfo";
 
@@ -7,12 +8,12 @@ import MainInfo from "./MainInfo";
 function JobListing({ job }) {
   // eslint-disable-next-line react/prop-types
   return (
-    <div className="job-container" key={job.id}>
+    <motion.div layout={true} className="job-container" key={job.id}>
       <img src={job.logo} alt={`${job.company} logo`} />
       <MainInfo job={job}></MainInfo>
 
       <JobFeatures features={job.features}></JobFeatures>
-    </div>
+    </motion.div>
   );
 }
 
