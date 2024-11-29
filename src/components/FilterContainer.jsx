@@ -1,10 +1,10 @@
-import "../css/SearchBox.css";
+import "../css/FilterContainer.css";
 import CurrentFilters from "./CurrentFilters";
 import { useContext } from "react";
 import { FilterListContext } from "../context/FilterListProvider";
 /* eslint-disable react/prop-types */
 
-function SearchBox() {
+function FilterContainer() {
   const { filterList, setFilterList } = useContext(FilterListContext);
   return (
     <div className="search-box">
@@ -17,4 +17,4 @@ function SearchBox() {
   );
 }
 
-export default SearchBox;
+export default FilterContainer;

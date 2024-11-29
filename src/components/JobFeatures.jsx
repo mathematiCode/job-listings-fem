@@ -2,32 +2,29 @@
 import { useState, useContext, useEffect } from "react";
 import { FilterListContext } from "../context/FilterListProvider";
 import { removeItemFromList } from "../utilities";
-import { filterJobs } from "../utilities";
 
-function JobLanguages({ languages }) {
+function JobFeatures({ features }) {
   return (
     <ul className="language-container">
-      {languages.map((language, index) => (
-        <ListItem key={index} language={language} />
+      {features.map((feature, index) => (
+        <ListItem key={index} feature={feature} />
       ))}
     </ul>
   );
 }
 
-function ListItem({ language }) {
+function ListItem({ feature }) {
   const [hovered, setHovered] = useState(false);
   const [selected, setSelected] = useState(false);
   const { filterList, setFilterList } = useContext(FilterListContext);
 
   function updateFilterList() {
     let newFilterList = [...filterList];
-    const filterIsAlreadyInList = newFilterList.find(
-      (item) => item == language
-    );
+    const filterIsAlreadyInList = newFilterList.find((item) => item == feature);
     if (filterIsAlreadyInList) {
-      newFilterList = removeItemFromList(newFilterList, language);
+      newFilterList = removeItemFromList(newFilterList, feature);
     } else {
-      newFilterList.push(language);
+      newFilterList.push(feature);
     }
     setFilterList(newFilterList);
   }
@@ -41,13 +38,13 @@ function ListItem({ language }) {
   };
 
   useEffect(() => {
-    const existingFilter = filterList.find((item) => item == language);
-    if (existingFilter == language) {
+    const existingFilter = filterList.find((item) => item == feature);
+    if (existingFilter == feature) {
       setSelected(true);
     } else {
       setSelected(false);
     }
-  }, [filterList, language]);
+  }, [filterList, feature]);
 
   return (
     <li
@@ -63,10 +60,10 @@ function ListItem({ language }) {
         className="no-styles"
         key={Math.random()}
       >
-        {language}
+        {feature}
       </button>
     </li>
   );
 }
 
-export default JobLanguages;
+export default JobFeatures;

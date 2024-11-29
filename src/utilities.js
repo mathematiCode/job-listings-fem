@@ -14,9 +14,9 @@ export function filterJobs(filterList) {
 
   for (let i = 0; i < data.length; i++) {
     newJobList[i].show = false;
-    data[i].languages.forEach((language) => {
+    data[i].features.forEach((feature) => {
       filterList.forEach((listItem) => {
-        if (language == listItem) {
+        if (feature == listItem) {
           newJobList[i].show = true;
         }
       });

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import "../css/card.css";
-import JobLanguages from "./JobLanguages";
+import JobFeatures from "./JobFeatures";
 import MainInfo from "./MainInfo";
 
 // eslint-disable-next-line react/prop-types
@@ -11,7 +11,7 @@ function JobListing({ job }) {
       <img src={job.logo} alt={`${job.company} logo`} />
       <MainInfo job={job}></MainInfo>
 
-      <JobLanguages languages={job.languages}></JobLanguages>
+      <JobFeatures features={job.features}></JobFeatures>
     </div>
   );
 }

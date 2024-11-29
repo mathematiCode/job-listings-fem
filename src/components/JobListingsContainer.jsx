@@ -5,6 +5,9 @@ import { filterJobs } from "../utilities.js";
 import JobListing from "./JobListing.jsx";
 import data from "../../data.json";
 
+data.forEach((item) => {
+  item.features = [item.role, item.level, ...item.languages, ...item.tools];
+});
 let currentJobList = [...data];
 currentJobList.forEach((item) => (item.show = true));
 
