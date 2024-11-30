@@ -35,7 +35,7 @@ function JobListingsContainer() {
     }
   }, [currentJobSelected]);
 
-  let drawerWidth = 350;
+  let drawerWidth = 300;
   if (window.screen.width < 500) {
     drawerWidth = window.screen.width;
   }
