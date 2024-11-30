@@ -35,9 +35,13 @@ function JobListingsContainer() {
     }
   }, [currentJobSelected]);
 
+  let drawerWidth = 350;
+  if (window.screen.width < 500) {
+    drawerWidth = window.screen.width;
+  }
+
   return (
     <>
-      {/* <div style={{ width: "100%" }}> */}
       {currentJobs.map((job) => {
         if (job.show == true) {
           return (
@@ -47,19 +51,18 @@ function JobListingsContainer() {
           );
         }
       })}
-      {/* </div> */}
       {open && (
         <Drawer
           open={open}
           anchor="right"
           variant="persistent"
           sx={{
-            width: "350px",
+            width: drawerWidth,
             flexShrink: 0,
             "& .MuiDrawer-paper": {
               backgroundColor: "#242424;",
               color: "white",
-              width: "350px",
+              width: drawerWidth,
               boxSizing: "border-box",
               border: "2px solid rgb(160, 200, 250)",
               borderRight: "0px solid",
