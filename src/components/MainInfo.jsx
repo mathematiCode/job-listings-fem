@@ -11,7 +11,7 @@ function MainInfo({ job }) {
   return (
     <div className="main-info">
       <div className="top-row">
-        <h5 className="company">{job.company}</h5>
+        <h3 className="company">{job.company}</h3>
         {job.new === true && <span className="tag">New!</span>}
         {job.featured === true && <span className="tag">Featured</span>}
       </div>

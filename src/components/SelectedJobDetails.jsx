@@ -14,6 +14,7 @@ function SelectedJobDetails({ job, setOpen }) {
     <>
       <X className="close-job-details" onClick={handleCloseDetails} />
       <div className="main-info">
+        <h3 style={{ marginBottom: "15px" }}> {job.company}</h3>
         <h2>{job.position}</h2>
         <div className="bottom-row">
           <p>{job.postedAt}</p>

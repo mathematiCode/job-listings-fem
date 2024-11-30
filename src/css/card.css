@@ -48,6 +48,10 @@ h2:hover {
   color: rgb(160, 200, 250);
 }
 
+.job-container h3 {
+  font-size: 0.9rem;
+}
+
 .feature-container {
   display: flex;
   flex-wrap: wrap;
