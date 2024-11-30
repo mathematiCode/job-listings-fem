@@ -144,6 +144,7 @@ h1 {
     width: 82%;
     justify-self: center;
     align-self: center;
-    margin-inline: auto;
+    margin-left: 9%;
+    margin-right: 9%;
   }
 }
