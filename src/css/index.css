@@ -137,6 +137,7 @@ h1 {
   }
 
   .main {
-    width: 95%;
+    width: 84%;
+    align-self: center;
   }
 }
