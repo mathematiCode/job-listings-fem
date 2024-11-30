@@ -121,8 +121,12 @@ h1 {
   height: fit-content;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .MuiDrawer-root {
+    width: 100%;
+  }
+
+  .MuiDrawer-paper {
     width: 100%;
   }
 
