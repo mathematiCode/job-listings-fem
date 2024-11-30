@@ -1,4 +1,4 @@
-import "../css/FilterContainer.css";
+import "../css/filterContainer.css";
 import { motion } from "motion/react";
 import CurrentFilters from "./CurrentFilters";
 import { useContext } from "react";

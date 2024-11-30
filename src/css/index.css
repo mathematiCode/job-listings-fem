@@ -44,7 +44,7 @@ body {
 }
 
 main:has(.selected-job-container) {
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 70fr 30fr;
   width: 98%;
 }
 
@@ -81,12 +81,12 @@ h1 {
   align-items: center;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: white;
   }
-}
+} */
 
 .no-styles {
   border: 0px none;
@@ -100,6 +100,7 @@ h1 {
 
 .selected-job-container {
   grid-column: 2/3;
+  width: 250px;
   position: relative;
   border: 2px solid rgb(160, 200, 250);
   border-radius: 10px;
