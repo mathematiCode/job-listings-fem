@@ -39,10 +39,13 @@ body {
   display: grid;
   width: 100%;
   align-self: flex-start;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .main {
-  display: grid;
+  display: inline;
   width: 70%;
   align-self: flex-start;
   margin: auto;
@@ -64,6 +67,7 @@ body {
   flex-shrink: 0;
   width: 100%;
   border: 2px solid rgb(160, 200, 250);
+  margin: auto;
   margin-block: 20px;
   padding: 1rem;
   box-shadow: 0px 0px 50px 5px hsla(213, 86%, 89%, 0.1);
@@ -137,7 +141,8 @@ h1 {
   }
 
   .main {
-    width: 84%;
+    width: 82%;
+    justify-self: center;
     align-self: center;
   }
 }
