@@ -1,3 +1,18 @@
+.job-description {
+  margin-top: 15px;
+}
+
+.selected-job-container .bottom-row {
+  margin-top: 15px;
+}
+
+.close-job-details {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
 .scale-button {
   position: relative;
   margin-top: 20px;

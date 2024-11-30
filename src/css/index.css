@@ -121,17 +121,12 @@ h1 {
   height: fit-content;
 }
 
-.job-description {
-  margin-top: 15px;
-}
+@media (max-width: 400px) {
+  .MuiDrawer-root {
+    width: 100%;
+  }
 
-.selected-job-container .bottom-row {
-  margin-top: 15px;
-}
-
-.close-job-details {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  cursor: pointer;
+  .main {
+    width: 100%;
+  }
 }
