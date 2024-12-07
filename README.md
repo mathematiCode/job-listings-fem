@@ -4,13 +4,13 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [Screenshots](#screenshot)
-  - [Links](#links)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
+- [Screenshots](#screenshot)
+- [Links](#links)
+- [Built with](#built-with)
+- [What I learned](#what-i-learned)
+- [Continued development](#continued-development)
 - [Author](#author)
+- [Installation and Build Instructions](#installation-and-running-instructions)
 
 ## Overview
 
@@ -18,11 +18,11 @@ I made this project to practice my budding React skills. I also used an Material
 
 ### Screenshots
 
-![home screen with job listings](image.png)
+![home screen with job listings](./images/image.png)
 
-![home screen with filtering](image-2.png)
+![home screen with filtering](./images/image-2.png)
 
-![home screen with details of a job](image-1.png)
+![home screen with details of a job](./images/image-1.png)
 
 ### Links
 
@@ -47,3 +47,36 @@ I hope to build many more projects with React and improve my architecture, acces
 - Website - [Visual Fraction Library](www.visualfractionlibrary.com) - I don't have a portfolio yet but this is my first portfolio project built in Vanilla JS.
 - Frontend Mentor - [@mathematiCode](https://www.frontendmentor.io/profile/mathematiCode)
 - BlueSky - [@math-coder](https://bsky.app/profile/mathcoder.bsky.social)
+
+## Installation and Running Instructions
+
+1. **Prerequisites**: Ensure you have Node.js (version 18 or newer) installed on your machine.
+
+2. **Clone the Repository**:
+
+   ```bash
+   git clone <your-repo-url>
+   cd <your-project-directory>
+   ```
+
+3. **Start the Development Server:** Use the command below to start the Vite development server:
+
+   ```
+   npm run dev
+   ```
+
+4. **Access the Application:** Open your browser and navigate to http://localhost:5173 to view your application.
+
+5. **Dependencies:** This project uses the following dependencies:
+
+   - MUI: A popular React UI framework.
+   - motion.dev: For animations and transitions.
+   - lucide-react: A collection of icons for React.
+
+6. **Building for Production:** When you're ready to build your application for production, run:
+
+   ```
+   npm run build
+   ```
+
+7. **Deployment:** The build output will be located in the dist directory, which you can deploy to your preferred hosting service.
