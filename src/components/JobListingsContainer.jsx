@@ -1,8 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { FilterListContext } from "../context/FilterListProvider.jsx";
-import { CurrentJobsContext } from "../context/CurrentJobsProvider.jsx";
 import { CurrentJobSelecedContext } from "../context/CurrentJobSelectedProvider.jsx";
-import { useEffect, useContext, useState } from "react";
+import { useContext } from "react";
 import { filterJobs } from "../utilities.js";
 import JobListing from "./JobListing.jsx";
 import SelectedJobDetails from "./SelectedJobDetails.jsx";
@@ -17,23 +16,12 @@ currentJobList.forEach((item) => (item.show = true));
 
 function JobListingsContainer() {
   const { filterList } = useContext(FilterListContext);
-  const { currentJobs, setCurrentJobs } = useContext(CurrentJobsContext);
   const { currentJobSelected, setCurrentJobSelected } = useContext(
     CurrentJobSelecedContext
   );
-  const [open, setOpen] = useState(false);
 
-  useEffect(() => {
-    setCurrentJobs(filterJobs(filterList));
-  }, [filterList, setCurrentJobs]);
-
-  useEffect(() => {
-    if (currentJobSelected != undefined) {
-      setOpen(true);
-    } else {
-      setOpen(false);
-    }
-  }, [currentJobSelected]);
+  let currentJobs = filterJobs(filterList);
+  let open = currentJobSelected != undefined;
 
   let drawerWidth = 300;
   if (window.screen.width < 500) {
@@ -74,7 +62,7 @@ function JobListingsContainer() {
         >
           <SelectedJobDetails
             job={currentJobSelected}
-            setOpen={setOpen}
+            setOpen={open}
           ></SelectedJobDetails>
         </Drawer>
       )}
