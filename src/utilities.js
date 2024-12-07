@@ -7,6 +7,7 @@ export function removeItemFromList(list, item) {
 import data from "../data.json";
 export function filterJobs(filterList) {
   let newJobList = [...data];
+  console.log(filterList);
   if (filterList.length == 0) {
     newJobList.forEach((job) => (job.show = true));
     return newJobList;
