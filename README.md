@@ -5,7 +5,7 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
 ## Table of contents
 
 - [Screenshots](#screenshot)
-- [Links](#links)
+- [Deployed Site](#deployed-site)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
 - [Continued development](#continued-development)
@@ -14,7 +14,7 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
 
 ## Overview
 
-I made this project to practice my budding React skills. I also used an Material UI for the drawer and used Framer motion (now Motion) for the animations.
+I made this project to practice my budding React skills. I used Material UI for the side drawer and used Framer motion (now Motion) for the animations.
 
 ### Screenshots
 
@@ -24,9 +24,9 @@ I made this project to practice my budding React skills. I also used an Material
 
 ![home screen with details of a job](./images/image-1.png)
 
-### Links
+### Deployed Site
 
-- Live Site URL: [Job Listings](https://job-listings-fem.netlify.app/)
+[Job Listings](https://job-listings-fem.netlify.app/)
 
 ### Built with
 
@@ -36,7 +36,7 @@ I made this project to practice my budding React skills. I also used an Material
 
 ### What I learned
 
-I learned a lot about breaking a website up into to components and how to manage state across those components.This was also tricky for me to do the CSS to get the drawer to cause everything else to translate to the right and handle the mobile view.
+I learned a lot about breaking a website up into to components and how to manage state across those components.This was also tricky for me to do the CSS to get the drawer to cause everything else to translate to the right and handle the mobile view. I also refactored this after I learned how to use context to separate the state logic from the components by keeping almost all of the functions that update the state variables inside of the context providers.
 
 ### Continued Development
 
@@ -44,7 +44,7 @@ I hope to build many more projects with React and improve my architecture, acces
 
 ## Author
 
-- Website - [Visual Fraction Library](www.visualfractionlibrary.com) - I don't have a portfolio yet but this is my first portfolio project built in Vanilla JS.
+- Website - [Visual Fraction Library](www.visualfractionlibrary.com) - I don't have a portfolio yet but this is my first portfolio project built in Vanilla JS. It generates scalable vector graphics for teachers and curriculum developers depicting fraction and mixed number multiplication and division with several different representations.
 - Frontend Mentor - [@mathematiCode](https://www.frontendmentor.io/profile/mathematiCode)
 - BlueSky - [@math-coder](https://bsky.app/profile/mathcoder.bsky.social)
 
