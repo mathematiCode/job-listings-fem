@@ -4,11 +4,12 @@ import { X } from "lucide-react";
 import { useContext } from "react";
 import { CurrentJobSelecedContext } from "../context/CurrentJobSelectedProvider";
 
-function SelectedJobDetails({ job, open }) {
+// eslint-disable-next-line no-unused-vars
+function SelectedJobDetails({ job, detailsDrawerIsOpen }) {
   const { setCurrentJobSelected } = useContext(CurrentJobSelecedContext);
   function handleCloseDetails() {
     setCurrentJobSelected();
-    open = false;
+    detailsDrawerIsOpen = false;
   }
   return (
     <>

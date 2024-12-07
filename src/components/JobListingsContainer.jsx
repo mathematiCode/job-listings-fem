@@ -21,7 +21,7 @@ function JobListingsContainer() {
   );
 
   const currentJobs = filterJobs(filterList);
-  const open = currentJobSelected != undefined;
+  const detailsDrawerIsOpen = currentJobSelected != undefined;
 
   let drawerWidth = 300;
   if (window.screen.width < 500) {
@@ -39,9 +39,9 @@ function JobListingsContainer() {
           );
         }
       })}
-      {open && (
+      {detailsDrawerIsOpen && (
         <Drawer
-          open={open}
+          open={detailsDrawerIsOpen}
           anchor="right"
           variant="persistent"
           sx={{
@@ -62,7 +62,7 @@ function JobListingsContainer() {
         >
           <SelectedJobDetails
             job={currentJobSelected}
-            open={open}
+            open={detailsDrawerIsOpen}
           ></SelectedJobDetails>
         </Drawer>
       )}
