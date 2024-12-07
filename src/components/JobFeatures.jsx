@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState, useContext, useEffect } from "react";
 import { FilterListContext } from "../context/FilterListProvider";
-import { removeItemFromList } from "../utilities";
 
 function JobFeatures({ features }) {
   return (
@@ -14,28 +13,8 @@ function JobFeatures({ features }) {
 }
 
 function ListItem({ feature }) {
-  const [hovered, setHovered] = useState(false);
   const [selected, setSelected] = useState(false);
-  const { filterList, setFilterList } = useContext(FilterListContext);
-
-  function updateFilterList() {
-    let newFilterList = [...filterList];
-    const filterIsAlreadyInList = newFilterList.find((item) => item == feature);
-    if (filterIsAlreadyInList) {
-      newFilterList = removeItemFromList(newFilterList, feature);
-    } else {
-      newFilterList.push(feature);
-    }
-    setFilterList(newFilterList);
-  }
-
-  const handleMouseEnter = () => {
-    setHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setHovered(false);
-  };
+  const { filterList, updateFilterList } = useContext(FilterListContext);
 
   useEffect(() => {
     const existingFilter = filterList.find((item) => item == feature);
@@ -47,16 +26,9 @@ function ListItem({ feature }) {
   }, [filterList, feature]);
 
   return (
-    <li
-      key={Math.random()}
-      className="feature"
-      data-hovered={hovered}
-      data-selected={selected}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+    <li key={Math.random()} className="feature" data-selected={selected}>
       <button
-        onClick={updateFilterList}
+        onClick={() => updateFilterList(feature)}
         className="no-styles"
         key={Math.random()}
       >

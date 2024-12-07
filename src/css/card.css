@@ -70,7 +70,7 @@ h2:hover {
   cursor: pointer;
 }
 
-.feature[data-hovered="true"] {
+.feature:hover {
   background-color: rgba(160, 200, 250, 0.1);
 }
 

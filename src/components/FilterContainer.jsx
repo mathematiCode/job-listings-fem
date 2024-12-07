@@ -6,12 +6,12 @@ import { FilterListContext } from "../context/FilterListProvider";
 /* eslint-disable react/prop-types */
 
 function FilterContainer() {
-  const { filterList, setFilterList } = useContext(FilterListContext);
+  const { filterList, resetFilterList } = useContext(FilterListContext);
   if (filterList.length > 0) {
     return (
       <motion.div layout={true} className="filter-container">
         <CurrentFilters filterList={filterList}></CurrentFilters>
-        <button className="clear-button" onClick={() => setFilterList([])}>
+        <button className="clear-button" onClick={resetFilterList}>
           {" "}
           Clear
         </button>

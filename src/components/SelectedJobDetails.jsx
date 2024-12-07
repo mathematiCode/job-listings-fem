@@ -4,11 +4,11 @@ import { X } from "lucide-react";
 import { useContext } from "react";
 import { CurrentJobSelecedContext } from "../context/CurrentJobSelectedProvider";
 
-function SelectedJobDetails({ job, setOpen }) {
+function SelectedJobDetails({ job, open }) {
   const { setCurrentJobSelected } = useContext(CurrentJobSelecedContext);
   function handleCloseDetails() {
     setCurrentJobSelected();
-    setOpen(false);
+    open = false;
   }
   return (
     <>

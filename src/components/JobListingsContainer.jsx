@@ -20,8 +20,8 @@ function JobListingsContainer() {
     CurrentJobSelecedContext
   );
 
-  let currentJobs = filterJobs(filterList);
-  let open = currentJobSelected != undefined;
+  const currentJobs = filterJobs(filterList);
+  const open = currentJobSelected != undefined;
 
   let drawerWidth = 300;
   if (window.screen.width < 500) {
@@ -62,7 +62,7 @@ function JobListingsContainer() {
         >
           <SelectedJobDetails
             job={currentJobSelected}
-            setOpen={open}
+            open={open}
           ></SelectedJobDetails>
         </Drawer>
       )}

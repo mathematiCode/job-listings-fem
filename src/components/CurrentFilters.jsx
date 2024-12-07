@@ -1,16 +1,10 @@
 /* eslint-disable react/prop-types */
 import { FilterListContext } from "../context/FilterListProvider";
 import { useContext } from "react";
-import { removeItemFromList } from "../utilities";
 import { X } from "lucide-react";
 
 function CurrentFilters() {
-  const { filterList, setFilterList } = useContext(FilterListContext);
-
-  function removeFilter(filter) {
-    const newList = removeItemFromList(filterList, filter);
-    setFilterList(newList);
-  }
+  const { filterList, removeFilter } = useContext(FilterListContext);
 
   return (
     <div className="current-filters">
