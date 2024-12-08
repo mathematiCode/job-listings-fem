@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext, useMemo } from "react";
 import { FilterListContext } from "../context/FilterListProvider";
 
 function JobFeatures({ features }) {
@@ -16,14 +16,14 @@ function ListItem({ feature }) {
   const [selected, setSelected] = useState(false);
   const { filterList, updateFilterList } = useContext(FilterListContext);
 
-  useEffect(() => {
+  useMemo(() => {
     const existingFilter = filterList.find((item) => item == feature);
     if (existingFilter == feature) {
       setSelected(true);
     } else {
       setSelected(false);
     }
-  }, [filterList, feature]);
+  }, [feature, filterList]);
 
   return (
     <li key={Math.random()} className="feature" data-selected={selected}>
